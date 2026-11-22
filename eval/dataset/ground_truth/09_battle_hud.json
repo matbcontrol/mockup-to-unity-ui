@@ -1,0 +1,128 @@
+{
+  "name": "09_battle_hud",
+  "canvas": {
+    "width": 540,
+    "height": 960,
+    "background": "#3c6e71"
+  },
+  "elements": [
+    {
+      "id": "Hp",
+      "type": "progress",
+      "rect": [
+        20,
+        30,
+        300,
+        36
+      ],
+      "color": "#284b63",
+      "fill": "#e63946",
+      "value": 0.72,
+      "radius": 14,
+      "text": "HP 720",
+      "fontSize": 22
+    },
+    {
+      "id": "Mana",
+      "type": "progress",
+      "rect": [
+        20,
+        76,
+        220,
+        24
+      ],
+      "color": "#284b63",
+      "fill": "#4cc9f0",
+      "value": 0.4,
+      "radius": 14
+    },
+    {
+      "id": "CoinIcon",
+      "type": "circle",
+      "rect": [
+        400,
+        28,
+        40,
+        40
+      ],
+      "color": "#ffd166"
+    },
+    {
+      "id": "Coins",
+      "type": "text",
+      "rect": [
+        445,
+        28,
+        85,
+        40
+      ],
+      "text": "312",
+      "fontSize": 28,
+      "color": "#ffffff",
+      "align": "left",
+      "bold": true
+    },
+    {
+      "id": "Wave",
+      "type": "text",
+      "rect": [
+        170,
+        130,
+        200,
+        50
+      ],
+      "text": "WAVE 7",
+      "fontSize": 36,
+      "color": "#ffffff",
+      "bold": true
+    },
+    {
+      "id": "Skill1",
+      "type": "circle",
+      "rect": [
+        40,
+        800,
+        110,
+        110
+      ],
+      "color": "#ef476f"
+    },
+    {
+      "id": "Skill2",
+      "type": "circle",
+      "rect": [
+        170,
+        820,
+        90,
+        90
+      ],
+      "color": "#118ab2"
+    },
+    {
+      "id": "Skill3",
+      "type": "circle",
+      "rect": [
+        280,
+        820,
+        90,
+        90
+      ],
+      "color": "#06d6a0"
+    },
+    {
+      "id": "Pause",
+      "type": "button",
+      "rect": [
+        440,
+        800,
+        80,
+        80
+      ],
+      "color": "#284b63",
+      "text": "II",
+      "fontSize": 34,
+      "bold": true,
+      "radius": 16
+    }
+  ]
+}

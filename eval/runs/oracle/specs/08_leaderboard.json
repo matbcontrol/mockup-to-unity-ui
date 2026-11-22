@@ -1,0 +1,188 @@
+{
+  "name": "08_leaderboard",
+  "canvas": {
+    "width": 540,
+    "height": 960,
+    "background": "#264653"
+  },
+  "elements": [
+    {
+      "id": "Title",
+      "type": "text",
+      "rect": [
+        40,
+        50,
+        460,
+        70
+      ],
+      "text": "LEADERBOARD",
+      "fontSize": 44,
+      "color": "#e9c46a",
+      "bold": true
+    },
+    {
+      "id": "Row1",
+      "type": "panel",
+      "rect": [
+        40,
+        160,
+        460,
+        80
+      ],
+      "color": "#e9c46a",
+      "radius": 18
+    },
+    {
+      "id": "Name1",
+      "type": "text",
+      "rect": [
+        70,
+        175,
+        250,
+        50
+      ],
+      "text": "1. NovaKid",
+      "fontSize": 30,
+      "color": "#264653",
+      "bold": true,
+      "align": "left"
+    },
+    {
+      "id": "Score1",
+      "type": "text",
+      "rect": [
+        330,
+        175,
+        150,
+        50
+      ],
+      "text": "98 200",
+      "fontSize": 30,
+      "color": "#264653",
+      "bold": true,
+      "align": "right"
+    },
+    {
+      "id": "Row2",
+      "type": "panel",
+      "rect": [
+        40,
+        255,
+        460,
+        80
+      ],
+      "color": "#2a9d8f",
+      "radius": 18
+    },
+    {
+      "id": "Name2",
+      "type": "text",
+      "rect": [
+        70,
+        270,
+        250,
+        50
+      ],
+      "text": "2. Orbit",
+      "fontSize": 30,
+      "color": "#ffffff",
+      "align": "left"
+    },
+    {
+      "id": "Score2",
+      "type": "text",
+      "rect": [
+        330,
+        270,
+        150,
+        50
+      ],
+      "text": "91 450",
+      "fontSize": 30,
+      "color": "#ffffff",
+      "align": "right"
+    },
+    {
+      "id": "Row3",
+      "type": "panel",
+      "rect": [
+        40,
+        350,
+        460,
+        80
+      ],
+      "color": "#2a9d8f",
+      "radius": 18
+    },
+    {
+      "id": "Name3",
+      "type": "text",
+      "rect": [
+        70,
+        365,
+        250,
+        50
+      ],
+      "text": "3. Pixelor",
+      "fontSize": 30,
+      "color": "#ffffff",
+      "align": "left"
+    },
+    {
+      "id": "Score3",
+      "type": "text",
+      "rect": [
+        330,
+        365,
+        150,
+        50
+      ],
+      "text": "88 010",
+      "fontSize": 30,
+      "color": "#ffffff",
+      "align": "right"
+    },
+    {
+      "id": "YouRow",
+      "type": "panel",
+      "rect": [
+        40,
+        760,
+        460,
+        90
+      ],
+      "color": "#f4a261",
+      "radius": 18
+    },
+    {
+      "id": "YouName",
+      "type": "text",
+      "rect": [
+        70,
+        780,
+        250,
+        50
+      ],
+      "text": "57. You",
+      "fontSize": 32,
+      "color": "#264653",
+      "bold": true,
+      "align": "left"
+    },
+    {
+      "id": "YouScore",
+      "type": "text",
+      "rect": [
+        330,
+        780,
+        150,
+        50
+      ],
+      "text": "41 300",
+      "fontSize": 32,
+      "color": "#264653",
+      "bold": true,
+      "align": "right"
+    }
+  ]
+}

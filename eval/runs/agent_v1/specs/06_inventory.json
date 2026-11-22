@@ -1,0 +1,22 @@
+{
+  "name": "06_inventory",
+  "canvas": { "width": 540, "height": 960, "background": "#0b132b" },
+  "elements": [
+    { "id": "Header", "type": "panel", "rect": [0, 0, 540, 100], "color": "#262f48" },
+    { "id": "Title", "type": "text", "rect": [30, 25, 300, 52], "text": "Inventory", "fontSize": 41, "color": "#ffffff", "bold": true, "align": "left" },
+    { "id": "SlotCount", "type": "text", "rect": [380, 34, 130, 36], "text": "18 / 40", "fontSize": 28, "color": "#5bc0be", "bold": true, "align": "right" },
+    { "id": "Slot1", "type": "panel", "rect": [30, 140, 150, 150], "color": "#42566f", "radius": 16 },
+    { "id": "Slot2", "type": "panel", "rect": [195, 140, 150, 150], "color": "#42566f", "radius": 16 },
+    { "id": "Slot3", "type": "panel", "rect": [360, 140, 150, 150], "color": "#42566f", "radius": 16 },
+    { "id": "Slot4", "type": "panel", "rect": [30, 305, 150, 150], "color": "#42566f", "radius": 16 },
+    { "id": "Slot5Selected", "type": "panel", "rect": [195, 305, 150, 150], "color": "#61bebc", "radius": 16 },
+    { "id": "Slot6", "type": "panel", "rect": [360, 305, 150, 150], "color": "#42566f", "radius": 16 },
+    { "id": "DetailPanel", "type": "panel", "rect": [30, 490, 480, 260], "color": "#262f48", "radius": 20 },
+    { "id": "ItemName", "type": "text", "rect": [60, 514, 400, 44], "text": "Frost Blade", "fontSize": 36, "color": "#ffffff", "bold": true, "align": "left" },
+    { "id": "ItemDescription", "type": "text", "rect": [60, 588, 475, 36], "text": "Slows enemies on hit for 2 seconds.", "fontSize": 26, "color": "#c9d6df", "bold": true, "align": "left" },
+    { "id": "EquipButtonShadow", "type": "panel", "rect": [60, 675, 200, 60], "color": "#1a2239", "radius": 14 },
+    { "id": "EquipButton", "type": "button", "rect": [60, 670, 200, 60], "color": "#61bebc", "radius": 14, "text": "EQUIP", "fontSize": 28, "textColor": "#0b132b", "bold": true },
+    { "id": "SellButtonShadow", "type": "panel", "rect": [280, 675, 200, 60], "color": "#1a2239", "radius": 14 },
+    { "id": "SellButton", "type": "button", "rect": [280, 670, 200, 60], "color": "#70787f", "radius": 14, "text": "SELL", "fontSize": 25, "textColor": "#ffffff", "bold": true }
+  ]
+}

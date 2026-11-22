@@ -1,0 +1,194 @@
+{
+  "name": "06_inventory",
+  "canvas": {
+    "width": 540,
+    "height": 960,
+    "background": "#0b132b"
+  },
+  "elements": [
+    {
+      "id": "Top",
+      "type": "panel",
+      "rect": [
+        0,
+        0,
+        540,
+        100
+      ],
+      "color": "#1c2541"
+    },
+    {
+      "id": "Title",
+      "type": "text",
+      "rect": [
+        30,
+        25,
+        300,
+        50
+      ],
+      "text": "Inventory",
+      "fontSize": 38,
+      "color": "#ffffff",
+      "bold": true,
+      "align": "left"
+    },
+    {
+      "id": "Count",
+      "type": "text",
+      "rect": [
+        380,
+        30,
+        130,
+        40
+      ],
+      "text": "18 / 40",
+      "fontSize": 26,
+      "color": "#5bc0be",
+      "align": "right"
+    },
+    {
+      "id": "Slot1",
+      "type": "panel",
+      "rect": [
+        30,
+        140,
+        150,
+        150
+      ],
+      "color": "#3a506b",
+      "radius": 16
+    },
+    {
+      "id": "Slot2",
+      "type": "panel",
+      "rect": [
+        195,
+        140,
+        150,
+        150
+      ],
+      "color": "#3a506b",
+      "radius": 16
+    },
+    {
+      "id": "Slot3",
+      "type": "panel",
+      "rect": [
+        360,
+        140,
+        150,
+        150
+      ],
+      "color": "#3a506b",
+      "radius": 16
+    },
+    {
+      "id": "Slot4",
+      "type": "panel",
+      "rect": [
+        30,
+        305,
+        150,
+        150
+      ],
+      "color": "#3a506b",
+      "radius": 16
+    },
+    {
+      "id": "Slot5",
+      "type": "panel",
+      "rect": [
+        195,
+        305,
+        150,
+        150
+      ],
+      "color": "#5bc0be",
+      "radius": 16
+    },
+    {
+      "id": "Slot6",
+      "type": "panel",
+      "rect": [
+        360,
+        305,
+        150,
+        150
+      ],
+      "color": "#3a506b",
+      "radius": 16
+    },
+    {
+      "id": "Details",
+      "type": "panel",
+      "rect": [
+        30,
+        490,
+        480,
+        260
+      ],
+      "color": "#1c2541",
+      "radius": 22
+    },
+    {
+      "id": "ItemName",
+      "type": "text",
+      "rect": [
+        60,
+        510,
+        420,
+        50
+      ],
+      "text": "Frost Blade",
+      "fontSize": 34,
+      "color": "#ffffff",
+      "bold": true,
+      "align": "left"
+    },
+    {
+      "id": "ItemDesc",
+      "type": "text",
+      "rect": [
+        60,
+        565,
+        420,
+        80
+      ],
+      "text": "Slows enemies on hit for 2 seconds.",
+      "fontSize": 24,
+      "color": "#c9d6df",
+      "align": "left"
+    },
+    {
+      "id": "Equip",
+      "type": "button",
+      "rect": [
+        60,
+        670,
+        200,
+        60
+      ],
+      "color": "#5bc0be",
+      "text": "EQUIP",
+      "fontSize": 28,
+      "bold": true,
+      "radius": 16,
+      "textColor": "#0b132b"
+    },
+    {
+      "id": "Sell",
+      "type": "button",
+      "rect": [
+        280,
+        670,
+        200,
+        60
+      ],
+      "color": "#6c757d",
+      "text": "SELL",
+      "fontSize": 28,
+      "bold": true,
+      "radius": 16
+    }
+  ]
+}

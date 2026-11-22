@@ -1,0 +1,19 @@
+{
+  "name": "08_leaderboard",
+  "canvas": { "width": 540, "height": 960, "background": "#264653" },
+  "elements": [
+    { "id": "Title", "type": "text", "rect": [60, 60, 420, 54], "text": "LEADERBOARD", "fontSize": 43, "color": "#e9c46a", "bold": true, "align": "center" },
+    { "id": "Row1", "type": "panel", "rect": [40, 160, 460, 80], "color": "#e3c16e", "radius": 18 },
+    { "id": "Row1Name", "type": "text", "rect": [70, 182, 260, 38], "text": "1. NovaKid", "fontSize": 31, "color": "#264653", "bold": true, "align": "left" },
+    { "id": "Row1Score", "type": "text", "rect": [300, 182, 180, 38], "text": "98 200", "fontSize": 32, "color": "#264653", "bold": true, "align": "right" },
+    { "id": "Row2", "type": "panel", "rect": [40, 255, 460, 80], "color": "#339d90", "radius": 18 },
+    { "id": "Row2Name", "type": "text", "rect": [70, 277, 260, 38], "text": "2. Orbit", "fontSize": 31, "color": "#ffffff", "bold": true, "align": "left" },
+    { "id": "Row2Score", "type": "text", "rect": [300, 277, 180, 38], "text": "91 450", "fontSize": 32, "color": "#ffffff", "bold": true, "align": "right" },
+    { "id": "Row3", "type": "panel", "rect": [40, 350, 460, 80], "color": "#339d90", "radius": 18 },
+    { "id": "Row3Name", "type": "text", "rect": [70, 372, 260, 38], "text": "3. Pixelor", "fontSize": 31, "color": "#ffffff", "bold": true, "align": "left" },
+    { "id": "Row3Score", "type": "text", "rect": [300, 372, 180, 38], "text": "88 010", "fontSize": 32, "color": "#ffffff", "bold": true, "align": "right" },
+    { "id": "PlayerRow", "type": "panel", "rect": [40, 760, 460, 90], "color": "#eda266", "radius": 18 },
+    { "id": "PlayerName", "type": "text", "rect": [70, 787, 260, 38], "text": "57. You", "fontSize": 31, "color": "#264653", "bold": true, "align": "left" },
+    { "id": "PlayerScore", "type": "text", "rect": [300, 787, 180, 38], "text": "41 300", "fontSize": 32, "color": "#264653", "bold": true, "align": "right" }
+  ]
+}

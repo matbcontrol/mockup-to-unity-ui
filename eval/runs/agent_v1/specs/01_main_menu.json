@@ -1,0 +1,13 @@
+{
+  "name": "01_main_menu",
+  "canvas": { "width": 540, "height": 960, "background": "#14213d" },
+  "elements": [
+    { "id": "ProfileAvatar", "type": "circle", "rect": [30, 30, 64, 64], "color": "#fcb33a" },
+    { "id": "GameTitle", "type": "text", "rect": [40, 158, 460, 60], "text": "SKY RUNNER", "fontSize": 56, "color": "#fca311", "bold": true, "align": "center" },
+    { "id": "SeasonLabel", "type": "text", "rect": [120, 240, 300, 32], "text": "Season 4", "fontSize": 24, "color": "#e5e5e5", "bold": true, "align": "center" },
+    { "id": "PlayButton", "type": "button", "rect": [120, 470, 300, 90], "color": "#349d91", "radius": 16, "text": "PLAY", "fontSize": 48, "textColor": "#ffffff", "bold": true },
+    { "id": "ShopButton", "type": "button", "rect": [120, 585, 300, 70], "color": "#42576f", "radius": 14, "text": "SHOP", "fontSize": 32, "textColor": "#ffffff", "bold": true },
+    { "id": "SettingsButton", "type": "button", "rect": [120, 680, 300, 70], "color": "#42576f", "radius": 14, "text": "SETTINGS", "fontSize": 32, "textColor": "#ffffff", "bold": true },
+    { "id": "VersionLabel", "type": "text", "rect": [400, 912, 130, 30], "text": "v1.4.2", "fontSize": 20, "color": "#8d99ae", "bold": true, "align": "right" }
+  ]
+}

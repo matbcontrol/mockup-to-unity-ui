@@ -1,0 +1,18 @@
+{
+  "name": "04_settings",
+  "canvas": { "width": 540, "height": 960, "background": "#22223b" },
+  "elements": [
+    { "id": "Title", "type": "text", "rect": [120, 66, 300, 64], "text": "Settings", "fontSize": 49, "color": "#f2e9e4", "bold": true, "align": "center" },
+    { "id": "MusicRow", "type": "panel", "rect": [40, 180, 460, 90], "color": "#51556e", "radius": 18 },
+    { "id": "MusicLabel", "type": "text", "rect": [70, 204, 180, 44], "text": "Music", "fontSize": 32, "color": "#f2e9e4", "bold": true, "align": "left" },
+    { "id": "MusicSlider", "type": "progress", "rect": [270, 212, 200, 26], "color": "#22223b", "fill": "#c9ada7", "value": 0.8, "radius": 13 },
+    { "id": "SoundsRow", "type": "panel", "rect": [40, 290, 460, 90], "color": "#51556e", "radius": 18 },
+    { "id": "SoundsLabel", "type": "text", "rect": [70, 313, 180, 44], "text": "Sounds", "fontSize": 32, "color": "#f2e9e4", "bold": true, "align": "left" },
+    { "id": "SoundsSlider", "type": "progress", "rect": [270, 322, 200, 26], "color": "#22223b", "fill": "#c9ada7", "value": 0.4, "radius": 13 },
+    { "id": "LanguageRow", "type": "panel", "rect": [40, 400, 460, 90], "color": "#51556e", "radius": 18 },
+    { "id": "LanguageLabel", "type": "text", "rect": [70, 425, 220, 44], "text": "Language", "fontSize": 32, "color": "#f2e9e4", "bold": true, "align": "left" },
+    { "id": "LanguageButtonShadow", "type": "panel", "rect": [330, 423, 140, 54], "color": "#3f4259", "radius": 12 },
+    { "id": "LanguageButton", "type": "button", "rect": [330, 418, 140, 54], "color": "#9b8e99", "radius": 12, "text": "EN", "fontSize": 28, "textColor": "#ffffff", "bold": true },
+    { "id": "BackButton", "type": "button", "rect": [140, 820, 260, 80], "color": "#c5aca6", "radius": 16, "text": "BACK", "fontSize": 35, "textColor": "#22223b", "bold": true }
+  ]
+}

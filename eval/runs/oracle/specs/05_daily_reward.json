@@ -1,0 +1,163 @@
+{
+  "name": "05_daily_reward",
+  "canvas": {
+    "width": 540,
+    "height": 960,
+    "background": "#3d405b"
+  },
+  "elements": [
+    {
+      "id": "Title",
+      "type": "text",
+      "rect": [
+        40,
+        70,
+        460,
+        70
+      ],
+      "text": "DAILY REWARD",
+      "fontSize": 44,
+      "color": "#f4f1de",
+      "bold": true
+    },
+    {
+      "id": "Day1",
+      "type": "panel",
+      "rect": [
+        40,
+        190,
+        140,
+        170
+      ],
+      "color": "#81b29a",
+      "radius": 20
+    },
+    {
+      "id": "Day2",
+      "type": "panel",
+      "rect": [
+        200,
+        190,
+        140,
+        170
+      ],
+      "color": "#81b29a",
+      "radius": 20
+    },
+    {
+      "id": "Day3",
+      "type": "panel",
+      "rect": [
+        360,
+        190,
+        140,
+        170
+      ],
+      "color": "#e07a5f",
+      "radius": 20,
+      "outline": "#f2cc8f",
+      "outlineWidth": 5
+    },
+    {
+      "id": "D1",
+      "type": "text",
+      "rect": [
+        40,
+        200,
+        140,
+        40
+      ],
+      "text": "Day 1",
+      "fontSize": 24,
+      "color": "#f4f1de"
+    },
+    {
+      "id": "D2",
+      "type": "text",
+      "rect": [
+        200,
+        200,
+        140,
+        40
+      ],
+      "text": "Day 2",
+      "fontSize": 24,
+      "color": "#f4f1de"
+    },
+    {
+      "id": "D3",
+      "type": "text",
+      "rect": [
+        360,
+        200,
+        140,
+        40
+      ],
+      "text": "Day 3",
+      "fontSize": 24,
+      "color": "#f4f1de",
+      "bold": true
+    },
+    {
+      "id": "R1",
+      "type": "circle",
+      "rect": [
+        80,
+        255,
+        60,
+        60
+      ],
+      "color": "#f2cc8f"
+    },
+    {
+      "id": "R2",
+      "type": "circle",
+      "rect": [
+        240,
+        255,
+        60,
+        60
+      ],
+      "color": "#f2cc8f"
+    },
+    {
+      "id": "R3",
+      "type": "circle",
+      "rect": [
+        390,
+        245,
+        80,
+        80
+      ],
+      "color": "#f2cc8f"
+    },
+    {
+      "id": "Claim",
+      "type": "button",
+      "rect": [
+        110,
+        470,
+        320,
+        90
+      ],
+      "color": "#e07a5f",
+      "text": "CLAIM",
+      "fontSize": 40,
+      "bold": true,
+      "radius": 16
+    },
+    {
+      "id": "Timer",
+      "type": "text",
+      "rect": [
+        90,
+        590,
+        360,
+        40
+      ],
+      "text": "Next reward in 23:14:05",
+      "fontSize": 24,
+      "color": "#d6d3c4"
+    }
+  ]
+}

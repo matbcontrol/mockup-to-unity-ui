@@ -1,0 +1,22 @@
+{
+  "name": "10_profile",
+  "canvas": { "width": 540, "height": 960, "background": "#f1faee" },
+  "elements": [
+    { "id": "HeaderBanner", "type": "panel", "rect": [0, 0, 540, 260], "color": "#4d7f9e" },
+    { "id": "Avatar", "type": "circle", "rect": [195, 160, 150, 150], "color": "#e84650" },
+    { "id": "PlayerName", "type": "text", "rect": [70, 335, 400, 56], "text": "Captain Mira", "fontSize": 41, "color": "#1d3557", "bold": true, "align": "center" },
+    { "id": "LevelLabel", "type": "text", "rect": [150, 394, 240, 34], "text": "Level 23", "fontSize": 26, "color": "#457b9d", "bold": true, "align": "center" },
+    { "id": "XpBar", "type": "progress", "rect": [90, 450, 360, 30], "color": "#a8dadc", "fill": "#1d3557", "value": 0.55, "radius": 15 },
+    { "id": "StatCard1Border", "type": "panel", "rect": [40, 530, 140, 120], "color": "#a8dadc", "radius": 18 },
+    { "id": "StatCard1", "type": "panel", "rect": [43, 533, 134, 114], "color": "#f6f6f6", "radius": 15 },
+    { "id": "StatCard1Value", "type": "text", "rect": [45, 556, 130, 42], "text": "142", "fontSize": 33, "color": "#1d3557", "bold": true, "align": "center" },
+    { "id": "StatCard2Border", "type": "panel", "rect": [200, 530, 140, 120], "color": "#a8dadc", "radius": 18 },
+    { "id": "StatCard2", "type": "panel", "rect": [203, 533, 134, 114], "color": "#f6f6f6", "radius": 15 },
+    { "id": "StatCard2Value", "type": "text", "rect": [205, 556, 130, 42], "text": "310", "fontSize": 33, "color": "#1d3557", "bold": true, "align": "center" },
+    { "id": "StatCard3Border", "type": "panel", "rect": [360, 530, 140, 120], "color": "#a8dadc", "radius": 18 },
+    { "id": "StatCard3", "type": "panel", "rect": [363, 533, 134, 114], "color": "#f6f6f6", "radius": 15 },
+    { "id": "StatCard3Value", "type": "text", "rect": [365, 556, 130, 42], "text": "#57", "fontSize": 33, "color": "#1d3557", "bold": true, "align": "center" },
+    { "id": "EditProfileButtonShadow", "type": "panel", "rect": [140, 825, 260, 80], "color": "#b4bbb2", "radius": 16 },
+    { "id": "EditProfileButton", "type": "button", "rect": [140, 820, 260, 80], "color": "#273d5d", "radius": 16, "text": "EDIT PROFILE", "fontSize": 29, "textColor": "#ffffff", "bold": true }
+  ]
+}

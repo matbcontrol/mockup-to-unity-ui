@@ -1,0 +1,21 @@
+{
+  "name": "03_shop",
+  "canvas": { "width": 540, "height": 960, "background": "#1e2a4a" },
+  "elements": [
+    { "id": "Header", "type": "panel", "rect": [0, 0, 540, 110], "color": "#364677" },
+    { "id": "Title", "type": "text", "rect": [170, 30, 200, 54], "text": "SHOP", "fontSize": 43, "color": "#ffffff", "bold": true, "align": "center" },
+    { "id": "CoinIcon", "type": "circle", "rect": [400, 38, 34, 34], "color": "#ffd15e" },
+    { "id": "CoinCount", "type": "text", "rect": [441, 38, 90, 36], "text": "1250", "fontSize": 28, "color": "#ffe9a8", "bold": true, "align": "left" },
+    { "id": "ItemCard1", "type": "panel", "rect": [30, 150, 230, 300], "color": "#3c5081", "radius": 16 },
+    { "id": "ItemCard2", "type": "panel", "rect": [280, 150, 230, 300], "color": "#3c5081", "radius": 16 },
+    { "id": "Gem1", "type": "circle", "rect": [95, 185, 100, 100], "color": "#6ed9ff" },
+    { "id": "Gem2", "type": "circle", "rect": [345, 185, 100, 100], "color": "#d185ff" },
+    { "id": "BuyButton1Shadow", "type": "panel", "rect": [55, 375, 180, 60], "color": "#2a3a62", "radius": 14 },
+    { "id": "BuyButton1", "type": "button", "rect": [55, 370, 180, 60], "color": "#46bc63", "radius": 14, "text": "$0.99", "fontSize": 33, "textColor": "#ffffff", "bold": true },
+    { "id": "BuyButton2Shadow", "type": "panel", "rect": [305, 375, 180, 60], "color": "#2a3a62", "radius": 14 },
+    { "id": "BuyButton2", "type": "button", "rect": [305, 370, 180, 60], "color": "#46bc63", "radius": 14, "text": "$4.99", "fontSize": 33, "textColor": "#ffffff", "bold": true },
+    { "id": "VipProgress", "type": "progress", "rect": [60, 520, 420, 36], "color": "#141c33", "fill": "#ff9f1c", "value": 0.65, "radius": 14, "text": "VIP 65%", "fontSize": 24, "textColor": "#ffffff", "bold": true },
+    { "id": "CloseButtonShadow", "type": "panel", "rect": [170, 845, 200, 70], "color": "#141c33", "radius": 14 },
+    { "id": "CloseButton", "type": "button", "rect": [170, 840, 200, 70], "color": "#da5858", "radius": 14, "text": "CLOSE", "fontSize": 30, "textColor": "#ffffff", "bold": true }
+  ]
+}

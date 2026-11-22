@@ -1,0 +1,19 @@
+{
+  "name": "05_daily_reward",
+  "canvas": { "width": 540, "height": 960, "background": "#3d405b" },
+  "elements": [
+    { "id": "Title", "type": "text", "rect": [60, 80, 420, 54], "text": "DAILY REWARD", "fontSize": 44, "color": "#f4f1de", "bold": true, "align": "center" },
+    { "id": "Day1Card", "type": "panel", "rect": [40, 190, 140, 170], "color": "#84b19b", "radius": 20 },
+    { "id": "Day1Label", "type": "text", "rect": [45, 206, 130, 36], "text": "Day 1", "fontSize": 25, "color": "#f4f1de", "bold": true, "align": "center" },
+    { "id": "Day1Coin", "type": "circle", "rect": [80, 255, 60, 60], "color": "#f4d5a2" },
+    { "id": "Day2Card", "type": "panel", "rect": [200, 190, 140, 170], "color": "#84b19b", "radius": 20 },
+    { "id": "Day2Label", "type": "text", "rect": [205, 206, 130, 36], "text": "Day 2", "fontSize": 25, "color": "#f4f1de", "bold": true, "align": "center" },
+    { "id": "Day2Coin", "type": "circle", "rect": [240, 255, 60, 60], "color": "#f4d5a2" },
+    { "id": "Day3Card", "type": "panel", "rect": [364, 194, 132, 162], "color": "#db7d64", "radius": 16, "outline": "#f2cc8f", "outlineWidth": 4 },
+    { "id": "Day3Label", "type": "text", "rect": [365, 206, 130, 36], "text": "Day 3", "fontSize": 25, "color": "#f4f1de", "bold": true, "align": "center" },
+    { "id": "Day3Coin", "type": "circle", "rect": [390, 245, 80, 80], "color": "#f4d5a2" },
+    { "id": "ClaimButtonShadow", "type": "panel", "rect": [110, 476, 320, 90], "color": "#2d3044", "radius": 16 },
+    { "id": "ClaimButton", "type": "button", "rect": [110, 470, 320, 90], "color": "#db7d64", "radius": 16, "text": "CLAIM", "fontSize": 41, "textColor": "#ffffff", "bold": true },
+    { "id": "NextRewardTimer", "type": "text", "rect": [60, 594, 420, 34], "text": "Next reward in 23:14:05", "fontSize": 25, "color": "#d6d3c4", "bold": true, "align": "center" }
+  ]
+}

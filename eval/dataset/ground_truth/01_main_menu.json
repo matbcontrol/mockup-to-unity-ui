@@ -1,0 +1,107 @@
+{
+  "name": "01_main_menu",
+  "canvas": {
+    "width": 540,
+    "height": 960,
+    "background": "#14213d"
+  },
+  "elements": [
+    {
+      "id": "Logo",
+      "type": "text",
+      "rect": [
+        70,
+        140,
+        400,
+        90
+      ],
+      "text": "SKY RUNNER",
+      "fontSize": 56,
+      "color": "#fca311",
+      "bold": true
+    },
+    {
+      "id": "Subtitle",
+      "type": "text",
+      "rect": [
+        120,
+        235,
+        300,
+        40
+      ],
+      "text": "Season 4",
+      "fontSize": 26,
+      "color": "#e5e5e5"
+    },
+    {
+      "id": "Play",
+      "type": "button",
+      "rect": [
+        120,
+        470,
+        300,
+        90
+      ],
+      "color": "#2a9d8f",
+      "text": "PLAY",
+      "fontSize": 44,
+      "bold": true,
+      "radius": 16
+    },
+    {
+      "id": "Shop",
+      "type": "button",
+      "rect": [
+        120,
+        585,
+        300,
+        70
+      ],
+      "color": "#3a506b",
+      "text": "SHOP",
+      "fontSize": 32,
+      "bold": true,
+      "radius": 16
+    },
+    {
+      "id": "Settings",
+      "type": "button",
+      "rect": [
+        120,
+        680,
+        300,
+        70
+      ],
+      "color": "#3a506b",
+      "text": "SETTINGS",
+      "fontSize": 32,
+      "bold": true,
+      "radius": 16
+    },
+    {
+      "id": "Profile",
+      "type": "circle",
+      "rect": [
+        30,
+        30,
+        64,
+        64
+      ],
+      "color": "#fca311"
+    },
+    {
+      "id": "Version",
+      "type": "text",
+      "rect": [
+        370,
+        910,
+        160,
+        30
+      ],
+      "text": "v1.4.2",
+      "fontSize": 20,
+      "color": "#8d99ae",
+      "align": "right"
+    }
+  ]
+}

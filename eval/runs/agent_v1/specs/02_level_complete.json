@@ -1,0 +1,17 @@
+{
+  "name": "02_level_complete",
+  "canvas": { "width": 540, "height": 960, "background": "#2b2d42" },
+  "elements": [
+    { "id": "Window", "type": "panel", "rect": [40, 180, 460, 560], "color": "#e8ecee", "radius": 28 },
+    { "id": "TitleBanner", "type": "button", "rect": [70, 150, 400, 80], "color": "#e5273f", "radius": 16, "text": "LEVEL COMPLETE", "fontSize": 33, "textColor": "#ffffff", "bold": true },
+    { "id": "Star1", "type": "circle", "rect": [110, 270, 90, 90], "color": "#ffc22b" },
+    { "id": "Star2", "type": "circle", "rect": [225, 250, 90, 90], "color": "#ffc22b" },
+    { "id": "Star3Empty", "type": "circle", "rect": [340, 270, 90, 90], "color": "#9fa9bb" },
+    { "id": "ScoreLabel", "type": "text", "rect": [120, 404, 300, 34], "text": "SCORE", "fontSize": 25, "color": "#8d99ae", "bold": true, "align": "center" },
+    { "id": "ScoreValue", "type": "text", "rect": [90, 443, 360, 60], "text": "12 480", "fontSize": 50, "color": "#2b2d42", "bold": true, "align": "center" },
+    { "id": "NextButtonShadow", "type": "panel", "rect": [100, 566, 340, 80], "color": "#a8acae", "radius": 16 },
+    { "id": "NextButton", "type": "button", "rect": [100, 560, 340, 80], "color": "#12d1a0", "radius": 16, "text": "NEXT", "fontSize": 40, "textColor": "#ffffff", "bold": true },
+    { "id": "HomeButtonShadow", "type": "panel", "rect": [100, 661, 340, 60], "color": "#a8acae", "radius": 14 },
+    { "id": "HomeButton", "type": "button", "rect": [100, 655, 340, 60], "color": "#8e99ad", "radius": 14, "text": "HOME", "fontSize": 30, "textColor": "#ffffff", "bold": true }
+  ]
+}

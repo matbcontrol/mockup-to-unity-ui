@@ -1,0 +1,161 @@
+{
+  "name": "04_settings",
+  "canvas": {
+    "width": 540,
+    "height": 960,
+    "background": "#22223b"
+  },
+  "elements": [
+    {
+      "id": "Title",
+      "type": "text",
+      "rect": [
+        40,
+        60,
+        460,
+        70
+      ],
+      "text": "Settings",
+      "fontSize": 48,
+      "color": "#f2e9e4",
+      "bold": true
+    },
+    {
+      "id": "Row1",
+      "type": "panel",
+      "rect": [
+        40,
+        180,
+        460,
+        90
+      ],
+      "color": "#4a4e69",
+      "radius": 20
+    },
+    {
+      "id": "MusicLabel",
+      "type": "text",
+      "rect": [
+        70,
+        200,
+        200,
+        50
+      ],
+      "text": "Music",
+      "fontSize": 32,
+      "color": "#f2e9e4",
+      "align": "left"
+    },
+    {
+      "id": "Music",
+      "type": "progress",
+      "rect": [
+        270,
+        212,
+        200,
+        26
+      ],
+      "color": "#22223b",
+      "fill": "#c9ada7",
+      "value": 0.8,
+      "radius": 14
+    },
+    {
+      "id": "Row2",
+      "type": "panel",
+      "rect": [
+        40,
+        290,
+        460,
+        90
+      ],
+      "color": "#4a4e69",
+      "radius": 20
+    },
+    {
+      "id": "SfxLabel",
+      "type": "text",
+      "rect": [
+        70,
+        310,
+        200,
+        50
+      ],
+      "text": "Sounds",
+      "fontSize": 32,
+      "color": "#f2e9e4",
+      "align": "left"
+    },
+    {
+      "id": "Sfx",
+      "type": "progress",
+      "rect": [
+        270,
+        322,
+        200,
+        26
+      ],
+      "color": "#22223b",
+      "fill": "#c9ada7",
+      "value": 0.4,
+      "radius": 14
+    },
+    {
+      "id": "Row3",
+      "type": "panel",
+      "rect": [
+        40,
+        400,
+        460,
+        90
+      ],
+      "color": "#4a4e69",
+      "radius": 20
+    },
+    {
+      "id": "LangLabel",
+      "type": "text",
+      "rect": [
+        70,
+        420,
+        200,
+        50
+      ],
+      "text": "Language",
+      "fontSize": 32,
+      "color": "#f2e9e4",
+      "align": "left"
+    },
+    {
+      "id": "Lang",
+      "type": "button",
+      "rect": [
+        330,
+        418,
+        140,
+        54
+      ],
+      "color": "#9a8c98",
+      "text": "EN",
+      "fontSize": 28,
+      "bold": true,
+      "radius": 16
+    },
+    {
+      "id": "Back",
+      "type": "button",
+      "rect": [
+        140,
+        820,
+        260,
+        80
+      ],
+      "color": "#c9ada7",
+      "text": "BACK",
+      "fontSize": 36,
+      "bold": true,
+      "radius": 16,
+      "textColor": "#22223b"
+    }
+  ]
+}

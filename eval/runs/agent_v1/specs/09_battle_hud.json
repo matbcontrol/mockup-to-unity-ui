@@ -1,0 +1,16 @@
+{
+  "name": "09_battle_hud",
+  "canvas": { "width": 540, "height": 960, "background": "#3c6e71" },
+  "elements": [
+    { "id": "HealthBar", "type": "progress", "rect": [20, 30, 300, 36], "color": "#284b63", "fill": "#e63946", "value": 0.72, "radius": 14, "text": "HP 720", "fontSize": 24, "textColor": "#ffffff", "bold": true },
+    { "id": "ManaBar", "type": "progress", "rect": [20, 76, 220, 24], "color": "#284b63", "fill": "#4cc9f0", "value": 0.4, "radius": 12 },
+    { "id": "CoinIcon", "type": "circle", "rect": [400, 28, 40, 40], "color": "#ffd77c" },
+    { "id": "CoinCount", "type": "text", "rect": [445, 30, 90, 38], "text": "312", "fontSize": 28, "color": "#ffffff", "bold": true, "align": "left" },
+    { "id": "WaveLabel", "type": "text", "rect": [120, 130, 300, 54], "text": "WAVE 7", "fontSize": 38, "color": "#ffffff", "bold": true, "align": "center" },
+    { "id": "AttackButton", "type": "circle", "rect": [40, 800, 110, 110], "color": "#f05a7e" },
+    { "id": "SkillButton1", "type": "circle", "rect": [170, 820, 90, 90], "color": "#2592b8" },
+    { "id": "SkillButton2", "type": "circle", "rect": [280, 820, 90, 90], "color": "#1cd8a8" },
+    { "id": "PauseButtonShadow", "type": "panel", "rect": [440, 805, 80, 80], "color": "#2d5254", "radius": 12 },
+    { "id": "PauseButton", "type": "button", "rect": [440, 800, 80, 80], "color": "#315268", "radius": 12, "text": "II", "fontSize": 33, "textColor": "#ffffff", "bold": true }
+  ]
+}

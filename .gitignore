@@ -1,0 +1,14 @@
+UnityProject/[Ll]ibrary/
+UnityProject/[Tt]emp/
+UnityProject/[Oo]bj/
+UnityProject/[Ll]ogs/
+UnityProject/[Uu]ser[Ss]ettings/
+UnityProject/Captures/
+UnityProject/*.csproj
+UnityProject/*.sln
+UnityProject/.vs/
+mcp/node_modules/
+*.log
+eval/smoke_out/
+eval/runs/*/rounds/
+eval/runs/*/renders/*_diff.png

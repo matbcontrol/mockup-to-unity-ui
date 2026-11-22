@@ -1,0 +1,15 @@
+{
+  "name": "07_pause",
+  "canvas": { "width": 540, "height": 960, "background": "#252538" },
+  "elements": [
+    { "id": "PauseWindowBorder", "type": "panel", "rect": [70, 260, 400, 440], "color": "#e94560", "radius": 26 },
+    { "id": "PauseWindow", "type": "panel", "rect": [74, 264, 392, 432], "color": "#222c47", "radius": 22 },
+    { "id": "Title", "type": "text", "rect": [100, 297, 340, 60], "text": "PAUSED", "fontSize": 49, "color": "#ffffff", "bold": true, "align": "center" },
+    { "id": "ResumeButtonShadow", "type": "panel", "rect": [120, 405, 300, 80], "color": "#151c30", "radius": 16 },
+    { "id": "ResumeButton", "type": "button", "rect": [120, 400, 300, 80], "color": "#e34c65", "radius": 16, "text": "RESUME", "fontSize": 36, "textColor": "#ffffff", "bold": true },
+    { "id": "RestartButtonShadow", "type": "panel", "rect": [120, 505, 300, 70], "color": "#151c30", "radius": 14 },
+    { "id": "RestartButton", "type": "button", "rect": [120, 500, 300, 70], "color": "#1b3d65", "radius": 14, "text": "RESTART", "fontSize": 28, "textColor": "#ffffff", "bold": true },
+    { "id": "QuitButtonShadow", "type": "panel", "rect": [120, 595, 300, 70], "color": "#11182d", "radius": 14 },
+    { "id": "QuitButton", "type": "button", "rect": [120, 590, 300, 70], "color": "#1b3d65", "radius": 14, "text": "QUIT", "fontSize": 32, "textColor": "#ffffff", "bold": true }
+  ]
+}

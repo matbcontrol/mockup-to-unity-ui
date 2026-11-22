@@ -1,0 +1,94 @@
+{
+  "name": "07_pause",
+  "canvas": {
+    "width": 540,
+    "height": 960,
+    "background": "#000000"
+  },
+  "elements": [
+    {
+      "id": "Dim",
+      "type": "panel",
+      "rect": [
+        0,
+        0,
+        540,
+        960
+      ],
+      "color": "#1a1a2e"
+    },
+    {
+      "id": "Window",
+      "type": "panel",
+      "rect": [
+        70,
+        260,
+        400,
+        440
+      ],
+      "color": "#16213e",
+      "radius": 30,
+      "outline": "#e94560",
+      "outlineWidth": 4
+    },
+    {
+      "id": "Title",
+      "type": "text",
+      "rect": [
+        70,
+        290,
+        400,
+        70
+      ],
+      "text": "PAUSED",
+      "fontSize": 50,
+      "color": "#ffffff",
+      "bold": true
+    },
+    {
+      "id": "Resume",
+      "type": "button",
+      "rect": [
+        120,
+        400,
+        300,
+        80
+      ],
+      "color": "#e94560",
+      "text": "RESUME",
+      "fontSize": 36,
+      "bold": true,
+      "radius": 16
+    },
+    {
+      "id": "Restart",
+      "type": "button",
+      "rect": [
+        120,
+        500,
+        300,
+        70
+      ],
+      "color": "#0f3460",
+      "text": "RESTART",
+      "fontSize": 30,
+      "bold": true,
+      "radius": 16
+    },
+    {
+      "id": "Quit",
+      "type": "button",
+      "rect": [
+        120,
+        590,
+        300,
+        70
+      ],
+      "color": "#0f3460",
+      "text": "QUIT",
+      "fontSize": 30,
+      "bold": true,
+      "radius": 16
+    }
+  ]
+}

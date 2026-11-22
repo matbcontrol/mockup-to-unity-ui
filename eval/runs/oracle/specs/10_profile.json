@@ -1,0 +1,172 @@
+{
+  "name": "10_profile",
+  "canvas": {
+    "width": 540,
+    "height": 960,
+    "background": "#f1faee"
+  },
+  "elements": [
+    {
+      "id": "Banner",
+      "type": "panel",
+      "rect": [
+        0,
+        0,
+        540,
+        260
+      ],
+      "color": "#457b9d"
+    },
+    {
+      "id": "Avatar",
+      "type": "circle",
+      "rect": [
+        195,
+        160,
+        150,
+        150
+      ],
+      "color": "#e63946"
+    },
+    {
+      "id": "Name",
+      "type": "text",
+      "rect": [
+        70,
+        330,
+        400,
+        60
+      ],
+      "text": "Captain Mira",
+      "fontSize": 40,
+      "color": "#1d3557",
+      "bold": true
+    },
+    {
+      "id": "Level",
+      "type": "text",
+      "rect": [
+        170,
+        390,
+        200,
+        40
+      ],
+      "text": "Level 23",
+      "fontSize": 26,
+      "color": "#457b9d"
+    },
+    {
+      "id": "Xp",
+      "type": "progress",
+      "rect": [
+        90,
+        450,
+        360,
+        30
+      ],
+      "color": "#a8dadc",
+      "fill": "#1d3557",
+      "value": 0.55,
+      "radius": 14
+    },
+    {
+      "id": "Stat1",
+      "type": "panel",
+      "rect": [
+        40,
+        530,
+        140,
+        120
+      ],
+      "color": "#ffffff",
+      "radius": 20,
+      "outline": "#a8dadc",
+      "outlineWidth": 3
+    },
+    {
+      "id": "Stat2",
+      "type": "panel",
+      "rect": [
+        200,
+        530,
+        140,
+        120
+      ],
+      "color": "#ffffff",
+      "radius": 20,
+      "outline": "#a8dadc",
+      "outlineWidth": 3
+    },
+    {
+      "id": "Stat3",
+      "type": "panel",
+      "rect": [
+        360,
+        530,
+        140,
+        120
+      ],
+      "color": "#ffffff",
+      "radius": 20,
+      "outline": "#a8dadc",
+      "outlineWidth": 3
+    },
+    {
+      "id": "Wins",
+      "type": "text",
+      "rect": [
+        40,
+        550,
+        140,
+        50
+      ],
+      "text": "142",
+      "fontSize": 34,
+      "color": "#1d3557",
+      "bold": true
+    },
+    {
+      "id": "Games",
+      "type": "text",
+      "rect": [
+        200,
+        550,
+        140,
+        50
+      ],
+      "text": "310",
+      "fontSize": 34,
+      "color": "#1d3557",
+      "bold": true
+    },
+    {
+      "id": "Rank",
+      "type": "text",
+      "rect": [
+        360,
+        550,
+        140,
+        50
+      ],
+      "text": "#57",
+      "fontSize": 34,
+      "color": "#1d3557",
+      "bold": true
+    },
+    {
+      "id": "Edit",
+      "type": "button",
+      "rect": [
+        140,
+        820,
+        260,
+        80
+      ],
+      "color": "#1d3557",
+      "text": "EDIT PROFILE",
+      "fontSize": 30,
+      "bold": true,
+      "radius": 16
+    }
+  ]
+}
