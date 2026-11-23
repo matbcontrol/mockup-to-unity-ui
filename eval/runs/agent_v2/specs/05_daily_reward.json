@@ -1,0 +1,18 @@
+{
+  "name": "05_daily_reward",
+  "canvas": { "width": 540, "height": 960, "background": "#3d405b" },
+  "elements": [
+    { "id": "Day1Card", "type": "panel", "rect": [40, 190, 140, 170], "color": "#8ebaa5", "gradient": "#78a790", "radius": 18, "shadow": "#00000038", "shadowOffset": 6, "shadowBlur": 12 },
+    { "id": "Day2Card", "type": "panel", "rect": [200, 190, 140, 170], "color": "#8ebaa5", "gradient": "#78a790", "radius": 18, "shadow": "#00000038", "shadowOffset": 6, "shadowBlur": 12 },
+    { "id": "Day3Card", "type": "panel", "rect": [360, 190, 140, 170], "color": "#e3876f", "gradient": "#d27259", "radius": 18, "outline": "#f2cc8f", "outlineWidth": 5, "shadow": "#00000038", "shadowOffset": 6, "shadowBlur": 12 },
+    { "id": "Day1Reward", "type": "circle", "rect": [80, 255, 60, 60], "color": "#f5d7a6", "gradient": "#f1ca8c", "shadow": "#00000030", "shadowOffset": 4, "shadowBlur": 8 },
+    { "id": "Day2Reward", "type": "circle", "rect": [240, 255, 60, 60], "color": "#f5d7a6", "gradient": "#f1ca8c", "shadow": "#00000030", "shadowOffset": 4, "shadowBlur": 8 },
+    { "id": "Day3Reward", "type": "circle", "rect": [390, 245, 80, 80], "color": "#f5d7a6", "gradient": "#f1ca8c", "shadow": "#00000030", "shadowOffset": 4, "shadowBlur": 8 },
+    { "id": "ClaimButton", "type": "button", "rect": [110, 470, 320, 90], "color": "#e3886f", "gradient": "#d27259", "radius": 18, "shadow": "#00000042", "shadowOffset": 5, "shadowBlur": 1, "text": "CLAIM", "fontSize": 39, "textColor": "#ffffff", "bold": true },
+    { "id": "Title", "type": "text", "rect": [40, 80, 460, 56], "text": "DAILY REWARD", "fontSize": 43, "color": "#f4f1de", "bold": true, "align": "center" },
+    { "id": "Day1Label", "type": "text", "rect": [40, 206, 140, 34], "text": "Day 1", "fontSize": 25, "color": "#f4f1de", "bold": true, "align": "center" },
+    { "id": "Day2Label", "type": "text", "rect": [200, 206, 140, 34], "text": "Day 2", "fontSize": 25, "color": "#f4f1de", "bold": true, "align": "center" },
+    { "id": "Day3Label", "type": "text", "rect": [360, 206, 140, 34], "text": "Day 3", "fontSize": 25, "color": "#f4f1de", "bold": true, "align": "center" },
+    { "id": "NextRewardTimer", "type": "text", "rect": [60, 594, 420, 34], "text": "Next reward in 23:14:05", "fontSize": 26, "color": "#dcd8c6", "bold": true, "align": "center" }
+  ]
+}

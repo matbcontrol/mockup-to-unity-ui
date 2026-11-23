@@ -1,0 +1,19 @@
+{
+  "name": "08_leaderboard",
+  "canvas": { "width": 540, "height": 960, "background": "#264653" },
+  "elements": [
+    { "id": "Rank1Row", "type": "panel", "rect": [40, 160, 460, 80], "color": "#ebca79", "gradient": "#dab762", "radius": 18, "shadow": "#00000040", "shadowOffset": 6, "shadowBlur": 12 },
+    { "id": "Rank2Row", "type": "panel", "rect": [40, 255, 460, 80], "color": "#40a79a", "gradient": "#279386", "radius": 18, "shadow": "#00000040", "shadowOffset": 6, "shadowBlur": 12 },
+    { "id": "Rank3Row", "type": "panel", "rect": [40, 350, 460, 80], "color": "#40a79a", "gradient": "#279386", "radius": 18, "shadow": "#00000040", "shadowOffset": 6, "shadowBlur": 12 },
+    { "id": "PlayerRow", "type": "panel", "rect": [40, 760, 460, 90], "color": "#f5ad72", "gradient": "#e59759", "radius": 18, "shadow": "#00000040", "shadowOffset": 6, "shadowBlur": 12 },
+    { "id": "Title", "type": "text", "rect": [40, 60, 460, 56], "text": "LEADERBOARD", "fontSize": 42, "color": "#e9c46a", "bold": true, "align": "center" },
+    { "id": "Rank1Name", "type": "text", "rect": [69, 180, 260, 42], "text": "1. NovaKid", "fontSize": 32, "color": "#264653", "bold": true, "align": "left" },
+    { "id": "Rank1Score", "type": "text", "rect": [298, 180, 182, 42], "text": "98 200", "fontSize": 32, "color": "#264653", "bold": true, "align": "right" },
+    { "id": "Rank2Name", "type": "text", "rect": [69, 275, 260, 42], "text": "2. Orbit", "fontSize": 32, "color": "#ffffff", "bold": true, "align": "left" },
+    { "id": "Rank2Score", "type": "text", "rect": [298, 275, 182, 42], "text": "91 450", "fontSize": 32, "color": "#ffffff", "bold": true, "align": "right" },
+    { "id": "Rank3Name", "type": "text", "rect": [69, 370, 260, 42], "text": "3. Pixelor", "fontSize": 32, "color": "#ffffff", "bold": true, "align": "left" },
+    { "id": "Rank3Score", "type": "text", "rect": [298, 370, 182, 42], "text": "88 010", "fontSize": 32, "color": "#ffffff", "bold": true, "align": "right" },
+    { "id": "PlayerName", "type": "text", "rect": [69, 786, 260, 42], "text": "57. You", "fontSize": 32, "color": "#264653", "bold": true, "align": "left" },
+    { "id": "PlayerScore", "type": "text", "rect": [298, 786, 182, 42], "text": "41 300", "fontSize": 32, "color": "#264653", "bold": true, "align": "right" }
+  ]
+}

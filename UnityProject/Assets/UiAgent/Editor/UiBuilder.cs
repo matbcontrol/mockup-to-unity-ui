@@ -41,9 +41,11 @@ namespace UiAgent
             {
                 index++;
                 string name = UniqueName(string.IsNullOrEmpty(e.id) ? $"{e.type}_{index}" : e.id, used);
+                string type = (e.type ?? "panel").ToLowerInvariant();
+                if (!string.IsNullOrEmpty(e.shadow) && type != "text") AddShadow(root.transform, name, e, size, type == "circle");
                 var rt = CreateChild(root.transform, name);
                 Place(rt, e.rect, size);
-                switch ((e.type ?? "panel").ToLowerInvariant())
+                switch (type)
                 {
                     case "text": AddText(rt, e, e.text ?? "", e.color); break;
                     case "button": AddBox(rt, e); rt.gameObject.AddComponent<Button>(); if (!string.IsNullOrEmpty(e.text)) AddLabel(rt, e); break;
@@ -106,26 +108,66 @@ namespace UiAgent
         static void AddBox(RectTransform rt, ElementSpec e)
         {
             var img = rt.gameObject.AddComponent<Image>();
-            img.color = ParseColor(e.color);
+            ApplyFill(img, e);
             if (e.radius > 0.5f)
             {
                 img.sprite = RoundedSprite(Mathf.RoundToInt(e.radius));
                 img.type = Image.Type.Sliced;
             }
-            if (!string.IsNullOrEmpty(e.outline))
+            if (!string.IsNullOrEmpty(e.outline) && e.outlineWidth > 0)
             {
-                var o = rt.gameObject.AddComponent<Outline>();
-                o.effectColor = ParseColor(e.outline);
-                o.effectDistance = new Vector2(e.outlineWidth, -e.outlineWidth);
+                // Border as its own sliced ring sprite: stays inside the box and keeps the rounded corners.
+                var border = CreateChild(rt, "Border");
+                Stretch(border);
+                var b = border.gameObject.AddComponent<Image>();
+                b.color = ParseColor(e.outline);
+                b.sprite = RingSprite(Mathf.RoundToInt(Mathf.Max(e.radius, e.outlineWidth)), Mathf.RoundToInt(e.outlineWidth));
+                b.type = Image.Type.Sliced;
+                b.raycastTarget = false;
             }
         }
 
         static void AddCircle(RectTransform rt, ElementSpec e)
         {
             var img = rt.gameObject.AddComponent<Image>();
-            img.color = ParseColor(e.color);
+            ApplyFill(img, e);
             img.sprite = CircleSprite();
             img.preserveAspect = false;
+            if (!string.IsNullOrEmpty(e.outline) && e.outlineWidth > 0)
+            {
+                var border = CreateChild(rt, "Border");
+                Stretch(border);
+                var b = border.gameObject.AddComponent<Image>();
+                b.color = ParseColor(e.outline);
+                float d = Mathf.Max(1f, Mathf.Min(e.rect[2], e.rect[3]));
+                b.sprite = CircleRingSprite(Mathf.Clamp(Mathf.RoundToInt(e.outlineWidth / d * 256f), 1, 120));
+                b.raycastTarget = false;
+            }
+        }
+
+        // Solid color, or a vertical gradient from `color` (top) to `gradient` (bottom).
+        static void ApplyFill(Image img, ElementSpec e)
+        {
+            if (string.IsNullOrEmpty(e.gradient)) { img.color = ParseColor(e.color); return; }
+            img.color = Color.white;
+            var g = img.gameObject.AddComponent<UiVerticalGradient>();
+            g.top = ParseColor(e.color);
+            g.bottom = ParseColor(e.gradient);
+        }
+
+        // Soft drop shadow: a blurred rounded box behind the element, shifted down.
+        static void AddShadow(Transform parent, string name, ElementSpec e, Vector2 size, bool circle)
+        {
+            int blur = Mathf.Clamp(Mathf.RoundToInt(e.shadowBlur), 1, 64);
+            var r = e.rect;
+            var rt = CreateChild(parent, name + "_Shadow");
+            Place(rt, new[] { r[0] - blur, r[1] - blur + e.shadowOffset, r[2] + blur * 2, r[3] + blur * 2 }, size);
+            var img = rt.gameObject.AddComponent<Image>();
+            img.color = ParseColor(e.shadow);
+            int radius = circle ? Mathf.RoundToInt(Mathf.Min(r[2], r[3]) / 2f) : Mathf.RoundToInt(e.radius);
+            img.sprite = SoftSprite(Mathf.Clamp(radius, 0, 128), blur);
+            img.type = Image.Type.Sliced;
+            img.raycastTarget = false;
         }
 
         static void AddProgress(RectTransform rt, ElementSpec e)
@@ -187,6 +229,66 @@ namespace UiAgent
                 tex.SetPixel(x, y, new Color(1, 1, 1, a));
             }
             return SaveSprite(tex, path, new Vector4(radius, radius, radius, radius));
+        }
+
+        // Distance from a pixel to a rounded rectangle of half-size (hx, hy) and corner radius r, centered at c.
+        static float RoundedBoxDistance(float px, float py, float cx, float cy, float hx, float hy, float r)
+        {
+            float qx = Mathf.Abs(px - cx) - (hx - r), qy = Mathf.Abs(py - cy) - (hy - r);
+            float ox = Mathf.Max(qx, 0), oy = Mathf.Max(qy, 0);
+            return Mathf.Sqrt(ox * ox + oy * oy) + Mathf.Min(Mathf.Max(qx, qy), 0) - r;
+        }
+
+        static Sprite RingSprite(int radius, int width)
+        {
+            radius = Mathf.Clamp(radius, 2, 128); width = Mathf.Clamp(width, 1, radius);
+            string path = $"{GeneratedDir}/ring_{radius}_{width}.png";
+            var existing = AssetDatabase.LoadAssetAtPath<Sprite>(path);
+            if (existing) return existing;
+            int size = radius * 2 + 4; float c = size / 2f;
+            var tex = new Texture2D(size, size, TextureFormat.RGBA32, false);
+            for (int y = 0; y < size; y++)
+            for (int x = 0; x < size; x++)
+            {
+                float d = RoundedBoxDistance(x + 0.5f, y + 0.5f, c, c, c, c, radius);
+                float outer = Mathf.Clamp01(0.5f - d), inner = Mathf.Clamp01(0.5f - d - width);
+                tex.SetPixel(x, y, new Color(1, 1, 1, outer - inner));
+            }
+            return SaveSprite(tex, path, new Vector4(radius + 1, radius + 1, radius + 1, radius + 1));
+        }
+
+        static Sprite CircleRingSprite(int width)
+        {
+            string path = $"{GeneratedDir}/circle_ring_{width}.png";
+            var existing = AssetDatabase.LoadAssetAtPath<Sprite>(path);
+            if (existing) return existing;
+            int size = 256; float r = size / 2f;
+            var tex = new Texture2D(size, size, TextureFormat.RGBA32, false);
+            for (int y = 0; y < size; y++)
+            for (int x = 0; x < size; x++)
+            {
+                float d = Vector2.Distance(new Vector2(x + 0.5f, y + 0.5f), new Vector2(r, r));
+                tex.SetPixel(x, y, new Color(1, 1, 1, Mathf.Clamp01(r - d) - Mathf.Clamp01(r - width - d)));
+            }
+            return SaveSprite(tex, path, Vector4.zero);
+        }
+
+        static Sprite SoftSprite(int radius, int blur)
+        {
+            string path = $"{GeneratedDir}/soft_{radius}_{blur}.png";
+            var existing = AssetDatabase.LoadAssetAtPath<Sprite>(path);
+            if (existing) return existing;
+            int edge = radius + blur * 2;
+            int size = edge * 2 + 4; float c = size / 2f;
+            var tex = new Texture2D(size, size, TextureFormat.RGBA32, false);
+            for (int y = 0; y < size; y++)
+            for (int x = 0; x < size; x++)
+            {
+                float d = RoundedBoxDistance(x + 0.5f, y + 0.5f, c, c, c - blur, c - blur, radius);
+                float a = 1f - Mathf.SmoothStep(0f, 1f, Mathf.Clamp01((d + blur) / (2f * blur)));
+                tex.SetPixel(x, y, new Color(1, 1, 1, a));
+            }
+            return SaveSprite(tex, path, new Vector4(edge + 1, edge + 1, edge + 1, edge + 1));
         }
 
         static Sprite CircleSprite()

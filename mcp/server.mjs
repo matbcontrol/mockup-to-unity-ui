@@ -20,8 +20,9 @@ const tools = [
     name: 'unity_build_ui',
     description: 'Build a uGUI screen in Unity from a layout spec and save it as a prefab. Replaces the previous build. ' +
       'Spec: {"name","canvas":{"width","height","background"},"elements":[{"id","type":"panel|button|text|image|circle|progress",' +
-      '"rect":[x,y,w,h] in canvas px from top-left,"color","radius","outline","outlineWidth","text","fontSize","textColor","align":"left|center|right","bold","fill","value"}]}. ' +
-      'Elements are drawn in list order; put backgrounds first. Returns the prefab path and how each element was anchored.',
+      '"rect":[x,y,w,h] in canvas px from top-left,"color","gradient" (bottom color),"radius","outline","outlineWidth" (inner border),' +
+      '"shadow" (color with alpha),"shadowOffset","shadowBlur","text","fontSize","textColor","align":"left|center|right","bold","fill","value"}]}. ' +
+      'Elements are drawn in list order; put backgrounds first. Use the styling fields instead of extra panels. Returns the prefab path and how each element was anchored.',
     inputSchema: { type: 'object', properties: { spec: { type: 'object', description: 'Layout spec' } }, required: ['spec'] },
   },
   {

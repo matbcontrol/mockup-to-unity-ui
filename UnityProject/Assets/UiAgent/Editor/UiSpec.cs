@@ -32,8 +32,12 @@ namespace UiAgent
         public float[] rect = { 0, 0, 100, 100 };
         public string color = "#ffffff";
         public float radius;          // rounded corners in px, panels/buttons/progress
-        public string outline;        // optional outline color
+        public string outline;        // optional border color, drawn inside the box and following the rounded corners
         public float outlineWidth = 4;
+        public string gradient;       // optional bottom color: the box fades from `color` at the top to this at the bottom
+        public string shadow;         // optional soft drop shadow color, alpha allowed: "#00000055"
+        public float shadowOffset = 6;  // px down
+        public float shadowBlur = 12;   // px of softness
 
         // text, and the label of a button
         public string text;

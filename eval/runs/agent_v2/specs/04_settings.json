@@ -1,0 +1,17 @@
+{
+  "name": "04_settings",
+  "canvas": { "width": 540, "height": 960, "background": "#22223b" },
+  "elements": [
+    { "id": "MusicRow", "type": "panel", "rect": [40, 180, 460, 90], "color": "#5d6179", "gradient": "#454862", "radius": 18, "shadow": "#00000040", "shadowOffset": 6, "shadowBlur": 12 },
+    { "id": "SoundsRow", "type": "panel", "rect": [40, 290, 460, 90], "color": "#5d6179", "gradient": "#454862", "radius": 18, "shadow": "#00000040", "shadowOffset": 6, "shadowBlur": 12 },
+    { "id": "LanguageRow", "type": "panel", "rect": [40, 400, 460, 90], "color": "#5d6179", "gradient": "#454862", "radius": 18, "shadow": "#00000040", "shadowOffset": 6, "shadowBlur": 12 },
+    { "id": "MusicSlider", "type": "progress", "rect": [270, 212, 200, 26], "color": "#22223b", "fill": "#c9ada7", "value": 0.8, "radius": 13 },
+    { "id": "SoundsSlider", "type": "progress", "rect": [270, 322, 200, 26], "color": "#22223b", "fill": "#c9ada7", "value": 0.4, "radius": 13 },
+    { "id": "LanguageButton", "type": "button", "rect": [330, 418, 140, 54], "color": "#a597a1", "gradient": "#8a7e89", "radius": 12, "shadow": "#00000042", "shadowOffset": 5, "shadowBlur": 1, "text": "EN", "fontSize": 29, "textColor": "#ffffff", "bold": true },
+    { "id": "BackButton", "type": "button", "rect": [140, 820, 260, 80], "color": "#cfb6b0", "gradient": "#bb9f9a", "radius": 16, "shadow": "#00000042", "shadowOffset": 5, "shadowBlur": 1, "text": "BACK", "fontSize": 35, "textColor": "#22223b", "bold": true },
+    { "id": "Title", "type": "text", "rect": [120, 69, 300, 60], "text": "Settings", "fontSize": 49, "color": "#f2e9e4", "bold": true, "align": "center" },
+    { "id": "MusicLabel", "type": "text", "rect": [69, 205, 190, 44], "text": "Music", "fontSize": 32, "color": "#f2e9e4", "bold": true, "align": "left" },
+    { "id": "SoundsLabel", "type": "text", "rect": [69, 315, 190, 44], "text": "Sounds", "fontSize": 32, "color": "#f2e9e4", "bold": true, "align": "left" },
+    { "id": "LanguageLabel", "type": "text", "rect": [69, 425, 240, 44], "text": "Language", "fontSize": 32, "color": "#f2e9e4", "bold": true, "align": "left" }
+  ]
+}

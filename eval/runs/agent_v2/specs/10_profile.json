@@ -1,0 +1,18 @@
+{
+  "name": "10_profile",
+  "canvas": { "width": 540, "height": 960, "background": "#f1faee" },
+  "elements": [
+    { "id": "Header", "type": "panel", "rect": [0, 0, 540, 260], "color": "#5889a8", "gradient": "#407393", "shadow": "#00000040", "shadowOffset": 6, "shadowBlur": 18 },
+    { "id": "Avatar", "type": "circle", "rect": [195, 160, 150, 150], "color": "#ec6871", "gradient": "#e5384a", "shadow": "#00000035", "shadowOffset": 6, "shadowBlur": 12 },
+    { "id": "XpBar", "type": "progress", "rect": [90, 450, 360, 30], "color": "#a8dadc", "fill": "#1d3557", "value": 0.55, "radius": 15 },
+    { "id": "StatCard1", "type": "panel", "rect": [40, 530, 140, 120], "color": "#ffffff", "gradient": "#f0f0f0", "radius": 18, "outline": "#a8dadc", "outlineWidth": 3, "shadow": "#00000038", "shadowOffset": 6, "shadowBlur": 12 },
+    { "id": "StatCard2", "type": "panel", "rect": [200, 530, 140, 120], "color": "#ffffff", "gradient": "#f0f0f0", "radius": 18, "outline": "#a8dadc", "outlineWidth": 3, "shadow": "#00000038", "shadowOffset": 6, "shadowBlur": 12 },
+    { "id": "StatCard3", "type": "panel", "rect": [360, 530, 140, 120], "color": "#ffffff", "gradient": "#f0f0f0", "radius": 18, "outline": "#a8dadc", "outlineWidth": 3, "shadow": "#00000038", "shadowOffset": 6, "shadowBlur": 12 },
+    { "id": "EditProfileButton", "type": "button", "rect": [140, 820, 260, 80], "color": "#344968", "gradient": "#213755", "radius": 16, "shadow": "#00000040", "shadowOffset": 5, "shadowBlur": 1, "text": "EDIT PROFILE", "fontSize": 30, "textColor": "#ffffff", "bold": true },
+    { "id": "PlayerName", "type": "text", "rect": [70, 336, 400, 54], "text": "Captain Mira", "fontSize": 41, "color": "#1d3557", "bold": true, "align": "center" },
+    { "id": "PlayerLevel", "type": "text", "rect": [170, 394, 200, 34], "text": "Level 23", "fontSize": 26, "color": "#457b9d", "bold": true, "align": "center" },
+    { "id": "StatValue1", "type": "text", "rect": [40, 554, 140, 46], "text": "142", "fontSize": 34, "color": "#1d3557", "bold": true, "align": "center" },
+    { "id": "StatValue2", "type": "text", "rect": [200, 554, 140, 46], "text": "310", "fontSize": 34, "color": "#1d3557", "bold": true, "align": "center" },
+    { "id": "StatValue3", "type": "text", "rect": [360, 554, 140, 46], "text": "#57", "fontSize": 34, "color": "#1d3557", "bold": true, "align": "center" }
+  ]
+}

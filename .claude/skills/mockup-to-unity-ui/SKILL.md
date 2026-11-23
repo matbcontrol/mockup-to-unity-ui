@@ -31,7 +31,12 @@ MCP server `unity-ui-agent` (see README for setup). If MCP is not connected, the
 ```
 
 - `rect` is `[x, y, width, height]` in canvas pixels from the top-left corner. Canvas size = mockup size.
-- Types: `panel` (box, optional `radius`, `outline`, `outlineWidth`), `button` (box + label: `text`, `fontSize`, `textColor`), `text` (`color`, `fontSize`, `align`, `bold`), `circle`, `progress` (`color` = track, `fill`, `value` 0..1, optional label).
+- Types: `panel` (box, optional `radius`, `outline`, `outlineWidth`), `button` (box + label: `text`, `fontSize`, `textColor`), `text` (`color`, `fontSize`, `align`, `bold`), `circle`, `progress` (`color` = track, `fill`, `value` 0..1, optional `radius` and label).
+- Styling on any box or circle:
+  - `gradient`: bottom color of a vertical gradient that starts from `color` at the top.
+  - `shadow` (color with alpha, e.g. `"#00000040"`), `shadowOffset` (px down, default 6), `shadowBlur` (px, default 12). A hard "lip" under a game button is `shadowBlur: 1` with `shadowOffset: 5`.
+  - `outline` + `outlineWidth`: a border drawn inside the box that follows the rounded corners.
+- One visual object = one element. Never add extra panels to imitate shadows, borders or gradients: use the fields above. Extra elements make the prefab harder to work with.
 - Order matters: background panels first, then what sits on them, text last.
 - Give every element a meaningful `id` (PlayButton, CoinCount): they become GameObject names a developer will see.
 
@@ -41,7 +46,7 @@ MCP server `unity-ui-agent` (see README for setup). If MCP is not connected, the
 2. Measure instead of guessing when it matters. You may read the PNG with a small script (for example sample colors or scan rows for edges with `pngjs`) to get exact colors and edges.
 3. Write the spec and call `unity_build_ui`. Fix any error it returns.
 4. `unity_screenshot`, then `compare_to_mockup`. Open both images and the diff. The worst regions tell you where to look.
-5. Fix what is off: missing elements, wrong size or position, wrong color, wrong text. Rebuild. Stop after 3 rounds or when the result matches; do not chase shadows and gradients, the spec has no such fields.
+5. Fix what is off: missing elements, wrong size or position, wrong color, wrong text, missing gradient or shadow. Rebuild. Stop after 3 rounds or when the result matches. Fonts differ from the mockup; size text by cap height, not by matching word width.
 6. Report: prefab path, final similarity, and anything you could not reproduce.
 
 ## Pitfalls

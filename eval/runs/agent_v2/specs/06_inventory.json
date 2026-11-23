@@ -1,0 +1,20 @@
+{
+  "name": "06_inventory",
+  "canvas": { "width": 540, "height": 960, "background": "#0b132b" },
+  "elements": [
+    { "id": "Header", "type": "panel", "rect": [0, 0, 540, 100], "color": "#343c55", "gradient": "#1a223c", "shadow": "#00000040", "shadowOffset": 6, "shadowBlur": 14 },
+    { "id": "Slot1", "type": "panel", "rect": [30, 140, 150, 150], "color": "#4e627a", "gradient": "#364a64", "radius": 16, "shadow": "#00000040", "shadowOffset": 5, "shadowBlur": 10 },
+    { "id": "Slot2", "type": "panel", "rect": [195, 140, 150, 150], "color": "#4e627a", "gradient": "#364a64", "radius": 16, "shadow": "#00000040", "shadowOffset": 5, "shadowBlur": 10 },
+    { "id": "Slot3", "type": "panel", "rect": [360, 140, 150, 150], "color": "#4e627a", "gradient": "#364a64", "radius": 16, "shadow": "#00000040", "shadowOffset": 5, "shadowBlur": 10 },
+    { "id": "Slot4", "type": "panel", "rect": [30, 305, 150, 150], "color": "#4e627a", "gradient": "#364a64", "radius": 16, "shadow": "#00000040", "shadowOffset": 5, "shadowBlur": 10 },
+    { "id": "Slot5Selected", "type": "panel", "rect": [195, 305, 150, 150], "color": "#6cc7c5", "gradient": "#55b4b2", "radius": 16, "shadow": "#00000040", "shadowOffset": 5, "shadowBlur": 10 },
+    { "id": "Slot6", "type": "panel", "rect": [360, 305, 150, 150], "color": "#4e627a", "gradient": "#364a64", "radius": 16, "shadow": "#00000040", "shadowOffset": 5, "shadowBlur": 10 },
+    { "id": "DetailPanel", "type": "panel", "rect": [30, 490, 480, 260], "color": "#343c55", "gradient": "#1a223d", "radius": 20, "shadow": "#00000040", "shadowOffset": 6, "shadowBlur": 12 },
+    { "id": "EquipButton", "type": "button", "rect": [60, 670, 200, 60], "color": "#6bc6c4", "gradient": "#51acab", "radius": 14, "shadow": "#00000042", "shadowOffset": 5, "shadowBlur": 1, "text": "EQUIP", "fontSize": 28, "textColor": "#0b132b", "bold": true },
+    { "id": "SellButton", "type": "button", "rect": [280, 670, 200, 60], "color": "#7b838a", "gradient": "#656d75", "radius": 14, "shadow": "#00000042", "shadowOffset": 5, "shadowBlur": 1, "text": "SELL", "fontSize": 26, "textColor": "#ffffff", "bold": true },
+    { "id": "Title", "type": "text", "rect": [29, 26, 260, 54], "text": "Inventory", "fontSize": 42, "color": "#ffffff", "bold": true, "align": "left" },
+    { "id": "ItemCount", "type": "text", "rect": [330, 34, 182, 36], "text": "18 / 40", "fontSize": 29, "color": "#5fc0bd", "bold": true, "align": "right" },
+    { "id": "ItemName", "type": "text", "rect": [59, 517, 400, 42], "text": "Frost Blade", "fontSize": 35, "color": "#ffffff", "bold": true, "align": "left" },
+    { "id": "ItemDescription", "type": "text", "rect": [59, 590, 440, 32], "text": "Slows enemies on hit for 2 seconds.", "fontSize": 25, "color": "#c9d6df", "bold": true, "align": "left" }
+  ]
+}
